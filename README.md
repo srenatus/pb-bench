@@ -7,7 +7,7 @@ With the giant message that is used here for benchmarking, a rather severe regre
 Use `make all` to run the benchmarks for v1.0.0, v1.1.0 and master (ref 3a3da3 at the moment), and have some benchstat calls compare the results:
 
 ```console
-make all
+$ make all
 cd v1.0.0 && make -f ../Makefile bench | grep ^Bench | tee ../v1.0.0.out
 BenchmarkRunMsgMarshal-8                    1000           1387356 ns/op          495933 B/op       5540 allocs/op
 BenchmarkRunMsgMarshal-8                    1000           1373843 ns/op          495932 B/op       5540 allocs/op
