@@ -10,7 +10,7 @@ import (
 	"github.com/golang/protobuf/jsonpb"
 	structpb "github.com/golang/protobuf/ptypes/struct"
 
-	api "github.com/srenatus/pb-bench/api"
+	api "github.com/srenatus/pb-bench/v1.0.0/api"
 )
 
 var (
@@ -89,7 +89,7 @@ func getRunStruct(b *testing.B) structpb.Struct {
 	var runStruct structpb.Struct
 	unmarshaler := jsonpb.Unmarshaler{AllowUnknownFields: true}
 
-	content, err := ioutil.ReadFile("data/converge-success-report.json")
+	content, err := ioutil.ReadFile("../data/converge-success-report.json")
 	if err != nil {
 		b.Fatal(err)
 	}
@@ -104,7 +104,7 @@ func getRunMsg(b *testing.B) *api.Run {
   r := api.Run{}
 	unmarshaler := jsonpb.Unmarshaler{AllowUnknownFields: true}
 
-	content, err := ioutil.ReadFile("data/converge-success-report.json")
+	content, err := ioutil.ReadFile("../data/converge-success-report.json")
 	if err != nil {
 		b.Fatal(err)
 	}
