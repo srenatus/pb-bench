@@ -1,4 +1,4 @@
-# PB 1.0.0 vs 1.1.0 benchmark ![travis](https://api.travis-ci.org/srenatus/pb-bench.svg?branch=master)
+# PB 1.0.0 vs 1.1.0 benchmark [![travis](https://api.travis-ci.org/srenatus/pb-bench.svg?branch=master)](https://travis-ci.org/srenatus/pb-bench)
 
 With the giant message that is used here for benchmarking, a rather severe regression seems to be present.
 
